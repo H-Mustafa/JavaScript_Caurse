@@ -651,14 +651,14 @@ let NumChd = 2.4;
 console.log(Number.parseInt(Math.min(NumCh, NumChb, NumChc, NumChd)));
 
 // Use Variables a + d One Time To Get The Needed Output
-console.log(Math.pow(NumCh, )); // 10000
+console.log(Math.pow(NumCh, Math.floor(NumChd))); // 10000
 
 // Get Integer "2" From d Variables With 4 Methods
-console.log();
-console.log();
-console.log();
-console.log();
+console.log(Math.floor(NumChd));
+console.log(Math.round(NumChd));
+console.log(Number.parseInt(NumChd));
+console.log(Math.trunc(NumChd));
 
 // Use Variables b + d To Get This Values
-console.log(); // 66.67 => String
-console.log(); // 67 => Number
+console.log((Math.floor(NumChb) / Math.ceil(NumChd)).toFixed(2)); // 66.67 => String
+console.log(Math.ceil(NumChb) / Math.ceil(NumChd)); // 67 => Number
