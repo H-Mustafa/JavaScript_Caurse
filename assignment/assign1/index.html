@@ -1,0 +1,47 @@
+<!-- The First Assignment -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      /*
+      This One Not Gonna Word Cuz The Element Came After The Command
+      */
+      // Code One
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      /*
+      The Code Will Gonna Work Cuz The Code will Work After The Page Stop Loading
+      */
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h2 id="el">Page Title</h2>
+    <script>
+      /*
+      This code will Work cuz code came after the element
+      */
+      // Code Three
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
+<!-- The Second Assignment -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Second Assignment</title>
+  </head>
+  <body>
+    <script src="./main.js"></script>
+  </body>
+</html>
